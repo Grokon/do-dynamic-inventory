@@ -1,0 +1,10 @@
+
+- name: Hello World Sample
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+    - name: Wait for interactive 
+      pause:
+        prompt: "Press [enter] to continue..."
+      register: test interactions
